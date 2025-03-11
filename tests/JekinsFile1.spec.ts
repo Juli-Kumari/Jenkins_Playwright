@@ -15,7 +15,7 @@ test('Test 3', async ({ page }) => {
     await expect(page).toHaveTitle('Google')
 })
 
-test('Test 4', async ({ page }) => {
+test('Test 4 failed', async ({ page }) => {
     await page.goto("https://www.google.co.in/")
-    await expect(page).toHaveTitle('Google')
+    await expect(page).toHaveTitle('Google1')
 })
